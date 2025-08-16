@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KBG Web Designs for SME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link href="/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>{{ title }}</h1>
+    <div>{{ mySpecialNote }}</div>
+
+    {% if showCatPicture %}
+        <img src="cat.png" alt="A cat">
+    {% endif %}
+
+    {% include 'nav.liquid' %}
+
+    {{ content }}
+
+    {% for post in collections.posts reversed %}
+        <a href="{{ post.url }}">
+            <h2>{{ post.data.title }}</h2>
+            <time>{{ post.data.date | date: "%B %d, %Y" }}</time>
+        </a>
+    {% endfor %}
+  </body>
+
+</html>
