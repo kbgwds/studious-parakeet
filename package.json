@@ -1,0 +1,23 @@
+{
+  "name": "studious-parakeet",
+  "version": "1.0.0",
+  "description": "11ty Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbgwds/studious-parakeet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbgwds/studious-parakeet/issues"
+  },
+  "homepage": "https://github.com/kbgwds/studious-parakeet#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
